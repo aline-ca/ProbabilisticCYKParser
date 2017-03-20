@@ -1,0 +1,71 @@
+S -> NP VP  		[0.9]
+S -> A B C D E      [0.1]
+
+A -> 'a'            [1.0]
+B -> 'b'            [1.0]
+C -> 'c'            [1.0]
+D -> 'd'            [1.0]
+E ->  'f' G 'h'     [1.0]
+F -> 'f'            [1.0]
+G -> 'g'            [1.0]
+H -> 'h'            [1.0]
+I -> J              [1.0]
+
+J -> K              [0.5]
+J -> X Y            [0.5]
+
+K -> L              [1.0]
+L -> 'l'            [1.0]
+
+X -> 'x'            [0.6]
+X -> Y 'z'          [0.4]
+
+Y -> 'y'            [1.0]
+Z -> 'z'            [1.0]
+
+
+NP -> ART NN		[0.6]
+NP -> NE			[0.4]
+
+VP -> VVFIN 		[0.3]	
+VP -> VVFIN NP		[0.2]
+VP -> VVFIN PP		[0.2]
+VP -> VVFIN ADJD	[0.2]
+VP -> VVFIN NN NP	[0.1]
+
+ART -> 'der' 		[0.4]
+ART -> 'die' 		[0.3]
+ART -> 'das' 		[0.2]
+ART -> 'ein'        [0.1]
+
+NE -> 'Peter'		[0.25]
+NE -> 'Maria'		[0.25]
+NE -> 'Hans'		[0.25]
+NE -> 'Sophie'		[0.25]
+
+NN -> 'Schiff'      [0.2]
+NN -> 'Kind'		[0.2]
+NN -> 'Hund'		[0.15]
+NN -> 'Katze'		[0.15]
+NN -> 'Fernglas'	[0.1]
+NN -> 'Hase'		[0.05]
+NN -> 'Wiese'		[0.05]
+NN -> 'Buch'        [0.05]
+NN -> 'Kapitaen'	[0.05]
+
+VVFIN -> 'sieht' 	[0.2]
+VVFIN -> 'steht' 	[0.2]
+VVFIN -> 'sehen'    [0.1]
+VVFIN -> 'kuesst' 	[0.15]
+VVFIN -> 'schreit' 	[0.1]
+VVFIN -> 'liest'    [0.1]
+VVFIN -> 'bellt' 	[0.05]
+VVFIN -> 'miaut' 	[0.05]
+VVFIN -> 'hoppelt'  [0.05]
+
+ADJD -> 'laut'		[0.4]
+ADJD -> 'leise'		[0.3]
+ADJD -> 'energisch'	[0.2]
+ADJD -> 'wankend'	[0.05]
+ADJD -> 'neugierig' [0.05]
+
